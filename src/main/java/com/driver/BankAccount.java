@@ -85,7 +85,8 @@ public class BankAccount {
         this.name = name;
     }
 
-    public double getBalance() {
+    public double getBalance()
+    {
         return balance;
     }
 
@@ -99,6 +100,13 @@ public class BankAccount {
 
     public void setMinBalance(double minBalance) {
         this.minBalance = minBalance;
+    }
+
+    public BankAccount(String name, double balance, double minBalance, boolean isPossible) {
+        this.name = name;
+        this.balance = balance;
+        this.minBalance = minBalance;
+        this.isPossible = isPossible;
     }
 
     

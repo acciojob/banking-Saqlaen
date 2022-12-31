@@ -8,7 +8,23 @@ public class CurrentAccount extends BankAccount{
         }
         
     }
-    String tradeLicenseId; //consists of Uppercase English characters only
+    private String tradeLicenseId; //consists of Uppercase English characters only
+
+    public String getTradeLicenseId() {
+        return tradeLicenseId;
+    }
+
+    public void setTradeLicenseId(String tradeLicenseId) {
+        this.tradeLicenseId = tradeLicenseId;
+    }
+
+    public boolean isPossible() {
+        return possible;
+    }
+
+    public void setPossible(boolean possible) {
+        this.possible = possible;
+    }
 
     boolean possible;
 
